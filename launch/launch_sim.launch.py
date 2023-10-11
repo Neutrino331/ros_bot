@@ -58,6 +58,10 @@ def generate_launch_description():
             os.path.join(get_package_share_directory(package_name),'launch','ds4.launch.py')])
     )
 
+    rviz = Node(
+        package="rviz2",
+        executable="rviz2",
+    )
     # Launch them all!
     return LaunchDescription([
         rsp,
@@ -65,5 +69,5 @@ def generate_launch_description():
         spawn_entity,
         diff_drive_spawner,
         joint_broad_spawner,
-        
+        rviz
     ])
