@@ -64,11 +64,11 @@ def generate_launch_description():
 
         DeclareLaunchArgument(
             'map',
-            default_value=os.path.join(bringup_dir, 'maps', 'turtlebot3_world.yaml'),
+            default_value=os.path.join(bringup_dir, 'maps','my_map.yaml'),
             description='Full path to map yaml file to load'),
 
         DeclareLaunchArgument(
-            'use_sim_time', default_value='false',
+            'use_sim_time', default_value='true',
             description='Use simulation (Gazebo) clock if true'),
 
         DeclareLaunchArgument(
