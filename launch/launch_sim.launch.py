@@ -45,7 +45,8 @@ def generate_launch_description():
     gazebo = IncludeLaunchDescription(
                 PythonLaunchDescriptionSource([os.path.join(
                     get_package_share_directory('gazebo_ros'), 'launch', 'gazebo.launch.py')]),
-                    launch_arguments={'extra_gazebo_args': '--ros-args --params-file ' + gazebo_params_file}.items()
+                    launch_arguments={'world': './src/ros_bot/worlds/cafe.world','extra_gazebo_args': '--ros-args --params-file ' + gazebo_params_file
+                    }.items()
              )
 
     # Run the spawner node from the gazebo_ros package. The entity name doesn't really matter if you only have a single robot.
@@ -55,11 +56,12 @@ def generate_launch_description():
                                    '-z','0.2'],
                         output='screen')
 
-
+    
     diff_drive_spawner = Node(
         package="controller_manager",
         executable="spawner",
         arguments=["diff_cont"],
+        
     )
 
     joint_broad_spawner = Node(
@@ -68,7 +70,14 @@ def generate_launch_description():
         arguments=["joint_broad"],
     )
 
-
+    rviz_config_dir = os.path.join(get_package_share_directory(package_name), 'config',"rviz.rviz")
+    rviz_node = Node(
+        package='rviz2',
+        executable='rviz2',
+        name='rviz2',
+        arguments=['-d', rviz_config_dir],
+        parameters=[{'use_sim_time': True}],
+        output='screen')
     # Code for delaying a node (I haven't tested how effective it is)
     # 
     # First add the below lines to imports
@@ -95,5 +104,6 @@ def generate_launch_description():
         gazebo,
         spawn_entity,
         diff_drive_spawner,
-        joint_broad_spawner
+        joint_broad_spawner,
+        rviz_node
     ])
