@@ -13,9 +13,10 @@ Panels:
         - /Map2
         - /Map2/Topic1
         - /LaserScan1
+        - /LaserScan1/Topic1
         - /Map3
       Splitter Ratio: 0.5
-    Tree Height: 738
+    Tree Height: 2028
   - Class: rviz_common/Selection
     Name: Selection
   - Class: rviz_common/Tool Properties
@@ -63,25 +64,35 @@ Visualization Manager:
           Value: true
         base_link:
           Value: true
+        base_plate:
+          Value: true
         camera_link:
           Value: true
         camera_link_optical:
           Value: true
-        caster_wheel:
-          Value: true
-        chassis:
-          Value: true
-        face_link:
-          Value: true
-        imu_link:
+        front_beam:
           Value: true
         laser_frame:
           Value: true
+        left_caster_wheel:
+          Value: true
         left_wheel:
+          Value: true
+        map:
           Value: true
         odom:
           Value: true
+        right_caster_wheel:
+          Value: true
         right_wheel:
+          Value: true
+        second_layercylinder_1:
+          Value: true
+        second_layercylinder_2:
+          Value: true
+        second_layercylinder_3:
+          Value: true
+        second_layercylinder_4:
           Value: true
       Marker Scale: 1
       Name: TF
@@ -89,26 +100,34 @@ Visualization Manager:
       Show Axes: false
       Show Names: false
       Tree:
-        odom:
-          base_link:
-            base_footprint:
-              {}
-            chassis:
-              camera_link:
-                camera_link_optical:
+        map:
+          odom:
+            base_link:
+              base_footprint:
+                {}
+              base_plate:
+                camera_link:
+                  camera_link_optical:
+                    {}
+                front_beam:
+                  laser_frame:
+                    {}
+                  left_wheel:
+                    {}
+                  right_wheel:
+                    {}
+                left_caster_wheel:
                   {}
-              caster_wheel:
-                {}
-              face_link:
-                {}
-              imu_link:
-                {}
-              laser_frame:
-                {}
-            left_wheel:
-              {}
-            right_wheel:
-              {}
+                right_caster_wheel:
+                  {}
+                second_layercylinder_1:
+                  {}
+                second_layercylinder_2:
+                  {}
+                second_layercylinder_3:
+                  {}
+                second_layercylinder_4:
+                  {}
       Update Interval: 0
       Value: true
     - Alpha: 1
@@ -137,6 +156,11 @@ Visualization Manager:
           Alpha: 1
           Show Axes: false
           Show Trail: false
+        base_plate:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
         camera_link:
           Alpha: 1
           Show Axes: false
@@ -146,22 +170,7 @@ Visualization Manager:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-        caster_wheel:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        chassis:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        face_link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        imu_link:
+        front_beam:
           Alpha: 1
           Show Axes: false
           Show Trail: false
@@ -171,12 +180,42 @@ Visualization Manager:
           Show Axes: false
           Show Trail: false
           Value: true
+        left_caster_wheel:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
         left_wheel:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
+        right_caster_wheel:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
         right_wheel:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        second_layercylinder_1:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        second_layercylinder_2:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        second_layercylinder_3:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        second_layercylinder_4:
           Alpha: 1
           Show Axes: false
           Show Trail: false
@@ -198,25 +237,35 @@ Visualization Manager:
           Value: true
         base_link:
           Value: true
+        base_plate:
+          Value: true
         camera_link:
           Value: true
         camera_link_optical:
           Value: true
-        caster_wheel:
-          Value: true
-        chassis:
-          Value: true
-        face_link:
-          Value: true
-        imu_link:
+        front_beam:
           Value: true
         laser_frame:
           Value: true
+        left_caster_wheel:
+          Value: true
         left_wheel:
+          Value: true
+        map:
           Value: true
         odom:
           Value: true
+        right_caster_wheel:
+          Value: true
         right_wheel:
+          Value: true
+        second_layercylinder_1:
+          Value: true
+        second_layercylinder_2:
+          Value: true
+        second_layercylinder_3:
+          Value: true
+        second_layercylinder_4:
           Value: true
       Marker Scale: 1
       Name: TF
@@ -224,26 +273,34 @@ Visualization Manager:
       Show Axes: true
       Show Names: false
       Tree:
-        odom:
-          base_link:
-            base_footprint:
-              {}
-            chassis:
-              camera_link:
-                camera_link_optical:
+        map:
+          odom:
+            base_link:
+              base_footprint:
+                {}
+              base_plate:
+                camera_link:
+                  camera_link_optical:
+                    {}
+                front_beam:
+                  laser_frame:
+                    {}
+                  left_wheel:
+                    {}
+                  right_wheel:
+                    {}
+                left_caster_wheel:
                   {}
-              caster_wheel:
-                {}
-              face_link:
-                {}
-              imu_link:
-                {}
-              laser_frame:
-                {}
-            left_wheel:
-              {}
-            right_wheel:
-              {}
+                right_caster_wheel:
+                  {}
+                second_layercylinder_1:
+                  {}
+                second_layercylinder_2:
+                  {}
+                second_layercylinder_3:
+                  {}
+                second_layercylinder_4:
+                  {}
       Update Interval: 0
       Value: true
     - Alpha: 0.699999988079071
@@ -268,7 +325,7 @@ Visualization Manager:
       Use Timestamp: false
       Value: true
     - Class: rviz_default_plugins/Image
-      Enabled: true
+      Enabled: false
       Max Value: 1
       Median window: 5
       Min Value: 0
@@ -280,7 +337,7 @@ Visualization Manager:
         History Policy: Keep Last
         Reliability Policy: Reliable
         Value: /camera/image_raw
-      Value: true
+      Value: false
     - Alpha: 0.699999988079071
       Class: rviz_default_plugins/Map
       Color Scheme: map
@@ -360,7 +417,7 @@ Visualization Manager:
   Enabled: true
   Global Options:
     Background Color: 48; 48; 48
-    Fixed Frame: odom
+    Fixed Frame: map
     Frame Rate: 30
   Name: root
   Tools:
@@ -402,31 +459,36 @@ Visualization Manager:
   Value: true
   Views:
     Current:
-      Angle: 0
-      Class: rviz_default_plugins/TopDownOrtho
+      Class: rviz_default_plugins/Orbit
+      Distance: 10.627758026123047
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
         Swap Stereo Eyes: false
         Value: false
+      Focal Point:
+        X: 1.9582685232162476
+        Y: 0.27579212188720703
+        Z: 0.0013387203216552734
+      Focal Shape Fixed Size: true
+      Focal Shape Size: 0.05000000074505806
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Scale: 36.50394821166992
+      Pitch: 1.0189526081085205
       Target Frame: <Fixed Frame>
-      Value: TopDownOrtho (rviz_default_plugins)
-      X: 1.569137454032898
-      Y: 0.533052384853363
+      Value: Orbit (rviz_default_plugins)
+      Yaw: 4.61353874206543
     Saved: ~
 Window Geometry:
   Displays:
-    collapsed: false
+    collapsed: true
   Height: 2432
-  Hide Left Dock: false
+  Hide Left Dock: true
   Hide Right Dock: false
   Image:
     collapsed: false
-  QMainWindow State: 000000ff00000000fd0000000400000000000001f7000003dafc020000000afb0000001200530065006c0065006300740069006f006e00000001e10000009b000000b000fffffffb0000001e0054006f006f006c002000500072006f007000650072007400690065007302000001ed000001df00000185000000a3fb000000120056006900650077007300200054006f006f02000001df000002110000018500000122fb000000200054006f006f006c002000500072006f0070006500720074006900650073003203000002880000011d000002210000017afb000000100044006900730070006c0061007900730100000578000003da0000018200fffffffb0000002000730065006c0065006300740069006f006e00200062007500660066006500720200000138000000aa0000023a00000294fb00000014005700690064006500530074006500720065006f02000000e6000000d2000003ee0000030bfb0000000c004b0069006e0065006300740200000186000001060000030c00000261fb000000220053006c0061006d0054006f006f006c0062006f00780050006c007500670069006e00000002590000019e000002e500fffffffb000000220053006c0061006d0054006f006f006c0062006f00780050006c007500670069006e000000028a0000016d000002e500ffffff000000010000015f000003dafc0200000003fb0000001e0054006f006f006c002000500072006f00700065007200740069006500730100000041000000780000000000000000fb0000000a005600690065007700730100000578000003da0000013200fffffffb0000001200530065006c0065006300740069006f006e010000025a000000b200000000000000000000000200000f54000004fefc0100000003fb0000000a0049006d006100670065010000000000000f540000009100fffffffb0000000c00430061006d006500720061010000000000000f540000000000000000fb0000000a00560069006500770073030000004e00000080000002e10000019700000003000004420000003efc0100000002fb0000000800540069006d00650100000000000004420000000000000000fb0000000800540069006d0065010000000000000450000000000000000000000be6000003da00000004000000040000000800000008fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
+  QMainWindow State: 000000ff00000000fd0000000400000000000001f7000008e4fc020000000afb0000001200530065006c0065006300740069006f006e00000001e10000009b000000b000fffffffb0000001e0054006f006f006c002000500072006f007000650072007400690065007302000001ed000001df00000185000000a3fb000000120056006900650077007300200054006f006f02000001df000002110000018500000122fb000000200054006f006f006c002000500072006f0070006500720074006900650073003203000002880000011d000002210000017afb000000100044006900730070006c006100790073000000006e000008e40000018200fffffffb0000002000730065006c0065006300740069006f006e00200062007500660066006500720200000138000000aa0000023a00000294fb00000014005700690064006500530074006500720065006f02000000e6000000d2000003ee0000030bfb0000000c004b0069006e0065006300740200000186000001060000030c00000261fb000000220053006c0061006d0054006f006f006c0062006f00780050006c007500670069006e00000002590000019e000002e500fffffffb000000220053006c0061006d0054006f006f006c0062006f00780050006c007500670069006e000000028a0000016d000002e500ffffff000000010000015f000008e4fc0200000003fb0000001e0054006f006f006c002000500072006f00700065007200740069006500730100000041000000780000000000000000fb0000000a00560069006500770073010000006e000008e40000013200fffffffb0000001200530065006c0065006300740069006f006e010000025a000000b200000000000000000000000200000f540000043dfc0100000003fb0000000a0049006d006100670065000000000000000f540000009100fffffffb0000000c00430061006d006500720061010000000000000f540000000000000000fb0000000a00560069006500770073030000004e00000080000002e10000019700000003000004420000003efc0100000002fb0000000800540069006d00650100000000000004420000000000000000fb0000000800540069006d0065010000000000000450000000000000000000000de9000008e400000004000000040000000800000008fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
   Selection:
     collapsed: false
   SlamToolboxPlugin:
